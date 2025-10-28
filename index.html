@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAYBOX.</title>
+    <link rel="icon" href="images/Icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .shortcut-links a:first-child {
+            color: #ed3833;
+        }
+
+        .subscribed-list {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="menu-icon">
+            <img src="images/playbox4.png" class="logo">
+        </div>
+        <!-- <div class="nav-middle flex-div">
+      <div class="search-box flex-div">
+      <input type="text" id="searchBox" placeholder="Search">
+      <img src="images/search.png">
+      </div> -->
+        <!-- <img src="images/voice-search.png" class="mic-icon"> -->
+        <!-- </div> -->
+        <div class="nav-right flex-div">
+            <!-- <img src="images/upload.png" class="upload">
+            <img src="images/more.png" class="more">
+            <img src="images/notification.png" class="notification"> -->
+            <a href="Account.html"><img src="images/User.jpg" class="user-icon"></a>
+
+        </div>
+    </nav>
+    <!-- <---------------------------Sidebar------------------------->
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a href="index.html"><img src="images/Home1.png">
+                <p>Home</p>
+            </a>
+            <a href="Search-page.html"><img src="images/Search1.png">
+                <p>Search</p>
+            </a>
+            <a href="Subscription-List.html"><img src="images/subscriprion.png">
+                <p>Subscription</p>
+            </a>
+            <a href="History-page.html"><img src="images/history.png">
+                <p>History</p>
+            </a>
+            <a href="Liked-Videos.html"><img src="images/like.png">
+                <p>Liked Videos</p>
+            </a>
+            <a href="Saved-videos.html"><img src="images/save.png">
+                <p>Saved Videos</p>
+            </a>
+            <button id="toggleButton" onclick="toggleContent()"
+                style="font-size:20px ; width: 150px;cursor: pointer;"><img src="images/show-more.png" width="25px"
+                    height="25px">Show More</button>
+
+            <hr>
+        </div>
+        <div class="subscribed-list" id="subscribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href="T-Series.html"><img src="Subscribed-List/T-series.jpg">
+                <p>T-Series</p>
+            </a>
+            <a href="Anand-Audio.html"><img src="Subscribed-List/Anand-Audio.png">
+                <p>Anand Audio</p>
+            </a>
+            <a href="DBeatsMusicWorld.html"><img src="Subscribed-List/D beats.png">
+                <p>DBeatsMusicWorld</p>
+            </a>
+            <a href="SonyMusicIndia.html"><img src="Subscribed-List/Sony Music .png">
+                <p>SonyMusicIndia</p>
+            </a>
+
+            </span>
+        </div>
+    </div>
+
+    <!-----------------Main----------------- -->
+    <div class="container">
+        <div class="banner">
+            <img src="images/PLAYBOX..png" width="100px" height="300px">
+        </div>
+        <div class="list-container">
+            <div class="vid-list" data-id="1" data-title="Video 1">
+                <a href="play-video1.html"><img src="Vid-thumbnails/Image1.jpg"class="thumbnail" alt="Video 1 Thumbnail" onclick="watchVideo('Ellie Goulding - Love Me Like You Do (Lyrics)', 'Videos/Video1.mp4')"></a>
+                <div class="flex-div">
+                    
+                    <div class="vid-info">
+                        <a href="play-video.html">Ellie Goulding - Love Me Like You Do (Lyrics)</a>
+                        <p>Twillight Sounds</p>
+                        <p>12M Views &bull; 2 Weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list" data-id="2" data-title="Video 2">
+                <a href="play-video2.html"><img src="Vid-thumbnails/Image2.jpg"class="thumbnail" alt="Video 2 Thumbnail" onclick="watchVideo('Teriyaki Boyz - Tokyo Drift |', 'Videos/Video2.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Gangster City.jpg.png">
+                    <div class="vid-info">
+                        <a href="">Teriyaki Boyz - Tokyo Drift |</a>
+                        <p>GANGSTER CITY</p>
+                        <p>128M Views &bull; 2 Weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list" data-id="3" data-title="Video 3">
+                <a href="play-video3.html"><img src="Vid-thumbnails/Image3.png" class="thumbnail" alt="Video 3 Thumbnail" onclick="watchVideo('Hobbs & Shaw - Bad Boy', 'Videos/Video3.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Samdroid.png">
+                    <div class="vid-info">
+                        <a href="">Hobbs & Shaw - Bad Boy </a>
+                        <p>SAMDROID</p>
+                        <p>153K Views &bull; 3 Weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list" data-id="4" data-title="Video 4">
+                <a href="play-video4.html"><img src="Vid-thumbnails/Image4.jpg" class="thumbnail" alt="Video 4 Thumbnail" onclick="watchVideo('Dharia - Sugar & Brownies (Official Video) [Ultra Music]', 'Videos/Video4.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Ultra Records.png">
+                    <div class="vid-info">
+                        <a href="">Dharia - Sugar & Brownies (Official Video) [Ultra Music]</a>
+                        <p>Ultra Records</p>
+                        <p>14M Views &bull; 4 Weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list" data-id="5" data-title="Video 5">
+                <a href="play-video5.html"><img src="Vid-thumbnails/Image5.jpg"class="thumbnail" alt="Video 5 Thumbnail" onclick="watchVideo('Joker BGM Song (Bass Boosted)', 'Videos/Video5.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Bass Boosted Songs.png">
+                    <div class="vid-info">
+                        <a href="">Joker BGM Song (Bass Boosted)</a>
+                        <p>BASS BOOSTED SONGS</p>
+                        <p>301M Views &bull; 7 Months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list" data-id="6" data-title="Video 1">
+                <a href="play-video6.html"><img src="Vid-thumbnails/Image6.jpg"class="thumbnail" alt="Video 6 Thumbnail" onclick="watchVideo('Bom Diggy Diggy (Lyrical Video) | Zack Knight | Jasmin Walia |', 'videos/video6.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/T-series.jpg">
+                    <div class="vid-info">
+                        <a href="">Bom Diggy Diggy (Lyrical Video) | Zack Knight | Jasmin Walia | Sonu Ke Titu Ki
+                            Sweety</a>
+                        <p>T Series</p>
+                        <p>175M Views &bull; 6 Months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video7.html"><img src="Vid-thumbnails/Image7.jpg"class="thumbnail" alt="Video 7 Thumbnail" onclick="watchVideo('Saree Ke Fall Sa| Full (Video) - R...Rajkumar|Pritam|Shahid & Sonakshi|', 'Videos/Video7.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Sony Music .png">
+                    <div class="vid-info">
+                        <a href="">Saree Ke Fall Sa| Full (Video) - R...Rajkumar|Pritam|Shahid & Sonakshi|Antara &
+                            Nakash</a>
+                        <p>SonyMusicIndiaVEVO</p>
+                        <p>57M Views &bull; 1 Year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video8.html"><img src="Vid-thumbnails/Image8.jpg"class="thumbnail" alt="Video 8 Thumbnail" onclick="watchVideo('Chittiyaan Kalaiyaan FULL VIDEO SONG | Roy | Meet Bros Anjjan, Kanika Kapoor |', 'Videos/Video8.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/T-series.jpg">
+                    <div class="vid-info">
+                        <a href="">'Chittiyaan Kalaiyaan' FULL VIDEO SONG | Roy | Meet Bros Anjjan, Kanika Kapoor |
+                            T-SERIES</a>
+                        <p>T-Series</p>
+                        <p>896M Views &bull; 10Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video9.html"><img src="Vid-thumbnails/Image9.jpg"class="thumbnail" alt="Video 9 Thumbnail" onclick="watchVideo('Gagana Nee Video Song (Kannada) |KGF Chapter 2| RockingStar Yash', 'Videos/Video9.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Lahari Music.png">
+                    <div class="vid-info">
+                        <a href="">Gagana Nee Video Song (Kannada) |KGF Chapter 2| RockingStar Yash, Prashanth Neel,Ravi
+                            Basrur,Hombale</a>
+                        <p>Lahari Music | T-Series</p>
+                        <p>7.5M Views &bull; 2 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video10.html"><img src="Vid-thumbnails/Image10.jpg"class="thumbnail" alt="Video 10 Thumbnail" onclick="watchVideo('BESABRIYAAN Full Video Song | M. S. DHONI - THE UNTOLD STORY |', 'Videos/Video10.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/T-series.jpg">
+                    <div class="vid-info">
+                        <a href="">BESABRIYAAN Full Video Song | M. S. DHONI - THE UNTOLD STORY | Sushant Singh
+                            Rajput</a>
+                        <p>T-Series</p>
+                        <p>89M Views &bull; 8 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video11.html"><img src="Vid-thumbnails/Image11.jpg"class="thumbnail" alt="Video 11 Thumbnail" onclick="watchVideo('Get Ready To Fight Full Video Song | BAAGHI | Tiger Shroff, Grandmaster Shifuji |', 'Videos/Video11.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/T-series.jpg">
+                    <div class="vid-info">
+                        <a href="">Get Ready To Fight Full Video Song | BAAGHI | Tiger Shroff, Grandmaster Shifuji |
+                            Benny Dayal</a>
+                        <p>T-Series</p>
+                        <p>104M Views &bull; 8 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video12.html"><img src="Vid-thumbnails/Image12.jpg"class="thumbnail" alt="Video 12 Thumbnail" onclick="watchVideo('Gentleman | Marali Manasaagide | 4K Video Song | Prajwal | Nishvika |', 'Videos/Video12.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Anand-Audio.png">
+                    <div class="vid-info">
+                        <a href="">Gentleman | Marali Manasaagide | 4K Video Song | Prajwal | Nishvika | Jadesh Kumar
+                            |Ajaneesh Loknath</a>
+                        <p>Anand Audio</p>
+                        <p>113M Views &bull; 5 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video13.html"><img src="Vid-thumbnails/Image13.jpg"class="thumbnail" alt="Video 13 Thumbnail" onclick="watchVideo('Inkem Inkem Full Video Song | Vijay Devarakonda, Rashmika Mandanna | Sid Sriram |', 'Videos/Video13.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Aditya Music Playback.png">
+                    <div class="vid-info">
+                        <a href="">Inkem Inkem Full Video Song | Vijay Devarakonda, Rashmika Mandanna | Sid Sriram |
+                            Geetha Govindam</a>
+                        <p>Aditya Music PLAYBACK</p>
+                        <p>95M Views &bull; 5 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video14.html"><img src="Vid-thumbnails/Image14.jpg"class="thumbnail" alt="Video 14 Thumbnail" onclick="watchVideo('Googly - Yeno Yeno Aagide Full Song Video | Yash | Kriti Kharbhanda', 'Videos/Video14.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/D beats.png">
+                    <div class="vid-info">
+                        <a href="">Googly - Yeno Yeno Aagide Full Song Video | Yash | Kriti Kharbhanda</a>
+                        <p>DBeatsMusicWorld</p>
+                        <p>34M Views &bull; 10 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video15.html"><img src="Vid-thumbnails/Image15.jpg"class="thumbnail" alt="Video 15 Thumbnail" onclick="watchVideo('Master - Vaathi Coming Video | Thalapathy Vijay | Anirudh Ravichander |', 'Videos/Video15.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Sony Music .png">
+                    <div class="vid-info">
+                        <a href="">Master - Vaathi Coming Video | Thalapathy Vijay | Anirudh Ravichander | Lokesh
+                            Kanagaraj</a>
+                        <p>SonyMusicIndiaVEVO</p>
+                        <p>535M Views &bull; 4 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video16.html"><img src="Vid-thumbnails/Image16.jpg"class="thumbnail" alt="Video 16 Thumbnail" onclick="watchVideo('Dwapara Lyrical | Krishnam Pranaya Sakhi | Golden⭐Ganesh | Malvika Nair|', 'Videos/Video16.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Anand-Audio.png">
+                    <div class="vid-info">
+                        <a href="">Dwapara Lyrical | Krishnam Pranaya Sakhi | Golden⭐Ganesh | Malvika Nair|Arjun
+                            Janya|Jaskaran| Dr.VNP </a>
+                        <p>Anand Audio</p>
+                        <p>97M Views &bull; 7 Months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video17.html"><img src="Vid-thumbnails/Image17.jpg"class="thumbnail" alt="Video 17 Thumbnail" onclick="watchVideo('Bachchan | Hello Hello | Kannada Movie Full Song Video | Kichcha Sudeep | Bhavana |', 'Videos/Video17.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/D beats.png">
+                    <div class="vid-info">
+                        <a href="">Bachchan | Hello Hello | Kannada Movie Full Song Video | Kichcha Sudeep | Bhavana | V
+                            Harikrishna </a>
+                        <p>DBeatsMusicWorld</p>
+                        <p>8.7M Views &bull; 11 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video18.html"><img src="Vid-thumbnails/Image18.jpg"class="thumbnail" alt="Video 18 Thumbnail" onclick="watchVideo('Full Video: Chuttamalle - Devara | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao |', 'Videos/Video18.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/T-series.jpg">
+                    <div class="vid-info">
+                        <a href="">Full Video: Chuttamalle - Devara | NTR | Janhvi Kapoor | Anirudh | Shilpa Rao |
+                            Koratala Siva </a>
+                        <p>T-Series Telugu</p>
+                        <p>98M Views &bull; 4 Months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video19.html"><img src="Vid-thumbnails/Image19.jpg"class="thumbnail" alt="Video 19 Thumbnail" onclick="watchVideo('Manasilaayo Video | Vettaiyan | Rajinikanth | Anirudh Ravichander | Manju Warrier |', 'Videos/Video19.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Sony Music .png">
+                    <div class="vid-info">
+                        <a href="">Manasilaayo Video | Vettaiyan | Rajinikanth | Anirudh Ravichander | Manju Warrier |
+                            T.J. Gnanavel </a>
+                        <p>SonyMusicIndiaVEVO</p>
+                        <p>134M Views &bull; 4 Months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video20.html"><img src="Vid-thumbnails/Image20.jpg"class="thumbnail" alt="Video 20 Thumbnail" onclick="watchVideo('Bul Bul | Hoo Chandu Hudugi | Kannada Movie HD Full Song Video | Darshan Thoogudeepa', 'Videos/Video20.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/D beats.png">
+                    <div class="vid-info">
+                        <a href="">Bul Bul | Hoo Chandu Hudugi | Kannada Movie HD Full Song Video | Darshan Thoogudeepa
+                            | V Harikrishna</a>
+                        <p>DBeatsMusicWorld</p>
+                        <p>11M Views &bull; 11 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video21.html"><img src="Vid-thumbnails/Image21.jpg"class="thumbnail" alt="Video 21 Thumbnail" onclick="watchVideo('Samajavaragamana Song| Ala Vaikunthapurramuloo Songs Telugu | Allu Arjun Latest Songs', 'Videos/Video21.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Aditya Music Playback.png">
+                    <div class="vid-info">
+                        <a href="">Samajavaragamana Song| Ala Vaikunthapurramuloo Songs Telugu | Allu Arjun Latest Songs
+                            | Sid Sriram</a>
+                        <p>Aditya Music PlaYBack</p>
+                        <p>52M Views &bull; 3 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video22.html"><img src="Vid-thumbnails/Image22.jpg"class="thumbnail" alt="Video 22 Thumbnail" onclick="watchVideo('Naatu Naatu Full Video Song (Telugu) [4K] | RRR | NTR,Ram Charan | MM Keeravaani | SS', 'Videos/Video22.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Lahari Music.png">
+                    <div class="vid-info">
+                        <a href="">Naatu Naatu Full Video Song (Telugu) [4K] | RRR | NTR,Ram Charan | MM Keeravaani | SS
+                            Rajamouli</a>
+                        <p>Lahari Music |T-Series</p>
+                        <p>241M Views &bull; 2 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video23.html"><img src="Vid-thumbnails/Image23.jpg"class="thumbnail" alt="Video 23 Thumbnail" onclick="watchVideo('Kaun Hain Voh - Full Video | Baahubali - The Beginning | Prabhas | Kailash K |', 'Videos/Video23.mp4')"></a>
+                <div class="flex-div">
+                    <img src="Subscribed-List/Zee Music Company.png">
+                    <div class="vid-info">
+                        <a href="">Kaun Hain Voh - Full Video | Baahubali - The Beginning | Prabhas | Kailash K | MM
+                            Kreem, Manoj M</a>
+                        <p>Zee Music Company</p>
+                        <p>671M Views &bull; 9 Years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video24.html"><img src="Vid-thumbnails/Image24.jpg"class="thumbnail" alt="Video 24 Thumbnail" onclick="watchVideo('Bhairathi Ranagal Title Video Song | Dr Shiva Rajkumar | Geetha SRK | Narthan |', 'Videos/Video24.mp4')"></a>
+                <div class="flex-div"
+                    data-title="Bhairathi Ranagal Title Video Song | Dr Shiva Rajkumar | Geetha SRK | Narthan | Ravi Basrur |">
+                    <img src="Subscribed-List/Anand-Audio.png">
+                    <div class="vid-info">
+                        <a href="">Bhairathi Ranagal Title Video Song | Dr Shiva Rajkumar | Geetha SRK | Narthan | Ravi
+                            Basrur |</a>
+                        <p>Anand Audio</p>
+                        <p>665K Views &bull; 3 Months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div id="results">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function watchVideo(videoName, videoFile) {
+            // Get the current history from localStorage, or initialize if empty
+            let history = JSON.parse(localStorage.getItem('videoHistory')) || [];
+            
+            // Add the new video to the history (avoid duplicates)
+            if (!history.some(video => video.videoName === videoName)) {
+                history.push({ videoName, videoFile });
+            }
+            
+            // Save the updated history to localStorage
+            localStorage.setItem('videoHistory', JSON.stringify(history));
+        }
+    </script>
+</body>
+
+</html>
