@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        header{
-            background-color: grey;
+        footer , header{
+            background-color: #444;
             text-align: center;
-            font-size: 30px;
-            color:white;
-            justify-content: space-between;
+            color: white;
         }
         .introduction{
-            display:flex;
+            display: flex;
             flex-direction: row;
-        }
-        footer{
-            background-color: grey;
-            color:white;
-            text-align: center;
-            position:fixed;
-            bottom:0;
-            width:100%;
         }
         table{
             width:1500px;
-            border:1px solid black;
-            height:200px;
+            height:250px;
+        }
+        footer{
+            position:fixed;
+            width:100%;
+            bottom: 0;
+        }
+        img{
+            width: 400px;
+            height:300px
         }
     </style>
 </head>
@@ -37,40 +35,43 @@
     </header>
     <main>
         <div class="introduction">
-            <img src="" alt="my img" width="500px" height="250px">
-            <p>I am sujith pursuing my btech degree in NMAMIT nitte.</p>
+            <img src="" alt="user profile">
+            <div class="aboutme">
+                <h2>About me</h2>
+                <p>Hello i am sujithknkdfndkdfndlkfnfldkmmnfl,dnfldm,nfsmdnsns,csscs</p>
+            </div>
         </div>
         <div class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Programming: Java,Python,C</li>
-                <li>Tools: Github,Firebase,Jira,VsCode,Spyder</li>
-                <li>Database: MySQL,MongoDB</li>
+                <li>Programming: Python, Java, C, HTML, CSS, Javascript</li>
+                <li>Software: Github, Spyder, Cisco packet tracer, Jira</li>
+                <li>Database: MySQL, MongoDB</li>
             </ul>
         </div>
         <div class="education">
-            <table border="1px">
+            <table border="2px">
                 <tr>
-                    <th>Institution Name</th>
                     <th>Qualification</th>
+                    <th>Institution</th>
                     <th>Year of passing</th>
-                    <th>% or CGPA</th>
+                    <th>Marks/Percentage</th>
                 </tr>
                 <tr>
+                    <td>Diploma in CSE</td>
                     <td>SNMP</td>
-                    <td>Diploma</td>
                     <td>2025</td>
                     <td>87%</td>
                 </tr>
                 <tr>
-                    <td>SDPT</td>
                     <td>PUC</td>
+                    <td>SDPT</td>
                     <td>2023</td>
                     <td>84%</td>
                 </tr>
                 <tr>
-                    <td>Maryvale</td>
                     <td>SSLC</td>
+                    <td>SDPT</td>
                     <td>2021</td>
                     <td>89%</td>
                 </tr>
@@ -78,7 +79,7 @@
         </div>
     </main>
     <footer>
-        <p>@2023 All rights reserved</p>
+        <p>@2023 copyrights All rights reserved</p>
     </footer>
 </body>
 </html>
